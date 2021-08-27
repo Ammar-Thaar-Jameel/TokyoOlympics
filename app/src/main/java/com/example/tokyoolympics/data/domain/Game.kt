@@ -1,6 +1,12 @@
 package com.example.tokyoolympics.data.domain
 
 data class Game(
-    val Rank:Int,
-    val TeamNOC:String
+    val rank: Int,
+    val teamNoc: String,
+    val goldMedal: Int,
+    val silverMedal: Int,
+    val bronzeMedal: Int,
+    val total: Int,
+    val rankByTotal: Int
+
 )
