@@ -5,7 +5,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tokyoolympics.R
 
+
 class GameViewHolder(viewItem:View):RecyclerView.ViewHolder(viewItem) {
+
     val textViewTeamName:TextView=viewItem.findViewById(R.id.team_name)
     val rankOfTheTeam:TextView=viewItem.findViewById(R.id.rank_of_the_team)
     val rankOfTheTeamByTotal:TextView=viewItem.findViewById(R.id.rank_of_the_team_by_total)
