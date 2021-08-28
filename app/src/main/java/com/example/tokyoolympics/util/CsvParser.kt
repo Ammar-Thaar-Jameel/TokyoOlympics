@@ -6,12 +6,12 @@ class CsvParser {
     fun parse(row: String): Game {
         val tokens = row.split(",")
         return Game(
-            rank = tokens[Constants.ColumnIndex.RANK].toInt(),
+            teamRank = tokens[Constants.ColumnIndex.RANK].toInt(),
             teamNoc = tokens[Constants.ColumnIndex.TEAM_NOC],
-            goldMedal = tokens[Constants.ColumnIndex.GOLD_MEDAL].toInt(),
+            goldMedal = tokens[Constants.ColumnIndex.GOLD_MEDAL].toIntOrNull()?:0,
             silverMedal = tokens[Constants.ColumnIndex.SILVER_MEDAL].toInt(),
             bronzeMedal = tokens[Constants.ColumnIndex.BRONZE_MEDAL].toInt(),
-            total = tokens[Constants.ColumnIndex.TOTAL].toInt(),
+            totalPoint = tokens[Constants.ColumnIndex.TOTAL].toInt(),
             rankByTotal = tokens[Constants.ColumnIndex.RANK_BY_TOTAL].toInt()
         )
 
