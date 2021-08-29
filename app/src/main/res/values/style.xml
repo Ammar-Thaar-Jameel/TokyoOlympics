@@ -2,5 +2,62 @@
 <resources>
 
 
+    <style name="RankOfTheTeam">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:gravity">center</item>
 
+        <item name="android:background">@drawable/text_view_shape</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="RankOfTheTeam.Right">
+        <item name="android:layout_marginRight">16dp</item>
+
+    </style>
+
+    <style name="RankOfTheTeamText">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="TeamName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center</item>
+
+
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="MedalStyle">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginBottom">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+
+    <style name="MedalStyle.Text">
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+
+    </style>
 </resources>
+
+
+

@@ -12,12 +12,12 @@ import java.io.InputStreamReader
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {
 
-    override val bindingInflater: (LayoutInflater) -> ActivityMainBinding = ActivityMainBinding::inflate
+    override val bindingInflater: (LayoutInflater) -> ActivityMainBinding =
+        ActivityMainBinding::inflate
 
 
     override fun setUp() {
         parserFile()
-        Log.v("GameAdapter",DataManger.games.size.toString())
         val adapter = GameAdapter(DataManger.games)
         binding?.myRecyclerOfGame?.adapter = adapter
 

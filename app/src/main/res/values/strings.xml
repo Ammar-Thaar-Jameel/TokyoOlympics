@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Tokyo Olympics</string>
+    <string name="rank_of_the_team">Rank Of The Team</string>
+    <string name="total_rank_of_team">Total Rank Of Team</string>
+    <string name="team_name">Team Name</string>
+    <string name="gold_medal">Gold Medal</string>
+    <string name="silver_medal">Silver Medal</string>
+    <string name="bronze_medal">Bronze Medal</string>
+    <string name="total_point">Total Point</string>
 </resources>
