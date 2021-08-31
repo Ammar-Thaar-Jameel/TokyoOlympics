@@ -10,6 +10,7 @@
 
 
 
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/my_recycler_of_game"
         android:layout_width="match_parent"
