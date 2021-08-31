@@ -1,9 +1,11 @@
 package com.example.tokyoolympics.ui
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
+import com.example.tokyoolympics.data.DataManger
 
 abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
 
@@ -19,6 +21,7 @@ abstract class BaseActivity<VB : ViewBinding> : AppCompatActivity() {
         setContentView(requireNotNull(_binding).root)
         setUp()
         addCallBacks()
+
     }
 
     abstract fun setUp()

@@ -20,7 +20,7 @@ class GameAdapter(val list: List<Game>) : RecyclerView.Adapter<GameViewHolder>()
         holder.apply {
             textViewTeamName.text = currentGame.teamNoc
             rankOfTheTeam.text = currentGame.teamRank.toString()
-            rankOfTheTeamByTotal.text = currentGame.rankByTotal.toString()
+
             goldMedal.text = currentGame.goldMedal.toString()
             silverMedal.text = currentGame.silverMedal.toString()
             bronzeMedal.text = currentGame.bronzeMedal.toString()

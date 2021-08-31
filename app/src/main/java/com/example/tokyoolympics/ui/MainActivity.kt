@@ -18,6 +18,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
 
     override fun setUp() {
         parserFile()
+
         val adapter = GameAdapter(DataManger.games)
         binding?.myRecyclerOfGame?.adapter = adapter
 
@@ -34,6 +35,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         buffer.forEachLine {
             val currentGame = parser.parse(it)
             DataManger.addGame(currentGame)
+
         }
     }
 

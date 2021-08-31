@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="145dp"
+    android:layout_height="135dp"
     android:layout_margin="@dimen/margin_middle"
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp">
@@ -12,136 +12,104 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+
+        <TextView
+            android:id="@+id/team_name"
+            style="@style/TeamName"
+            app:layout_constraintLeft_toRightOf="@id/gold_medal"
+            app:layout_constraintTop_toTopOf="@id/gold_medal"
+            tools:text="team_name" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/tokyo_image"
+            style="@style/ShapeImage"
+            android:background="@drawable/tokyo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/gold_medal_image"
+            style="@style/ShapeImageMadel"
+            android:src="@drawable/gold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gold_medal" />
+
+        <TextView
+            android:id="@+id/gold_medal"
+            style="@style/MedalStyleText"
+            app:layout_constraintBottom_toTopOf="@+id/silver_medal"
+            app:layout_constraintLeft_toRightOf="@id/gold_medal_image"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/silver_medal_image"
+            style="@style/ShapeImageMadel"
+            android:src="@drawable/silver"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/silver_medal" />
+
+        <TextView
+            android:id="@+id/silver_medal"
+            style="@style/MedalStyleText"
+            app:layout_constraintBottom_toTopOf="@+id/bronze_medal"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="@id/gold_medal"
+            app:layout_constraintRight_toRightOf="@id/gold_medal"
+            app:layout_constraintTop_toBottomOf="@+id/gold_medal"
+            tools:text="2" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/bronze_medal_image"
+            style="@style/ShapeImageMadel"
+            android:src="@drawable/bronze"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/bronze_medal" />
+
+        <TextView
+            android:id="@+id/bronze_medal"
+            style="@style/MedalStyleText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="@id/silver_medal"
+            app:layout_constraintRight_toRightOf="@id/silver_medal"
+            app:layout_constraintTop_toBottomOf="@+id/silver_medal"
+            tools:text="3" />
+
+
+        <TextView
+            android:id="@+id/total_point_text"
+            style="@style/TotalPoint"
+            android:text="@string/total_point"
+            app:layout_constraintBottom_toBottomOf="@id/bronze_medal"
+            app:layout_constraintLeft_toRightOf="@id/bronze_medal" />
+
+        <TextView
+            android:id="@+id/total_point"
+            style="@style/RankOfTheTeam"
+            app:layout_constraintBottom_toBottomOf="@+id/total_point_text"
+            app:layout_constraintLeft_toLeftOf="@id/rank_of_the_team"
+            app:layout_constraintTop_toTopOf="@id/total_point_text"
+            tools:text="4" />
+
+
         <TextView
             android:id="@+id/rank_of_the_team"
             style="@style/RankOfTheTeam"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/rank_of_the_team_text"
+            app:layout_constraintLeft_toRightOf="@id/rank_of_the_team_text"
+            app:layout_constraintTop_toTopOf="@id/rank_of_the_team_text"
             tools:text="1" />
 
         <TextView
             android:id="@+id/rank_of_the_team_text"
             style="@style/RankOfTheTeamText"
             android:text="@string/rank_of_the_team"
-            android:background="#9AA0A6"
-            app:layout_constraintLeft_toLeftOf="@id/rank_of_the_team"
-            app:layout_constraintRight_toRightOf="@id/rank_of_the_team"
-            app:layout_constraintTop_toBottomOf="@id/rank_of_the_team" />
-
-        <TextView
-            android:id="@+id/team_name"
-            style="@style/TeamName"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="team_name" />
-
-        <TextView
-            android:id="@+id/team_name_text"
-            style="@style/RankOfTheTeamText"
-            android:layout_marginTop="4dp"
-            android:text="@string/team_name"
-            android:background="#9AA0A6"
-            app:layout_constraintHorizontal_bias="0.533"
-            app:layout_constraintLeft_toLeftOf="@id/team_name"
-            app:layout_constraintRight_toRightOf="@id/team_name"
-            app:layout_constraintTop_toBottomOf="@id/team_name" />
-
-        <TextView
-            android:id="@+id/gold_medal"
-            style="@style/MedalStyle"
-
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/silver_medal"
-            tools:text="1" />
-
-        <TextView
-            android:id="@+id/gold_medal_text"
-            style="@style/MedalStyle.Text"
-            android:background="#9AA0A6"
-            android:text="@string/gold_medal"
-            app:layout_constraintLeft_toLeftOf="@id/gold_medal"
-            app:layout_constraintRight_toRightOf="@id/gold_medal"
-            app:layout_constraintTop_toBottomOf="@id/gold_medal" />
-
-        <TextView
-            android:id="@+id/silver_medal"
-            style="@style/MedalStyle"
-
-            app:layout_constraintLeft_toRightOf="@id/gold_medal"
-            app:layout_constraintRight_toLeftOf="@id/bronze_medal"
-            app:layout_constraintTop_toTopOf="@id/gold_medal"
-            tools:text="2" />
-
-
-        <TextView
-            android:id="@+id/silver_medal_text"
-            style="@style/MedalStyle.Text"
-            android:background="#9AA0A6"
-            android:text="@string/silver_medal"
-            app:layout_constraintLeft_toLeftOf="@id/silver_medal"
-            app:layout_constraintRight_toRightOf="@id/silver_medal"
-            app:layout_constraintTop_toBottomOf="@id/silver_medal" />
-
-        <TextView
-            android:id="@+id/bronze_medal"
-            style="@style/MedalStyle"
             app:layout_constraintLeft_toRightOf="@id/silver_medal"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/silver_medal"
-            tools:text="3" />
-
-        <TextView
-            android:id="@+id/bronze_medal_text"
-            style="@style/MedalStyle.Text"
-            android:background="#9AA0A6"
-            android:text="@string/bronze_medal"
-            app:layout_constraintLeft_toLeftOf="@id/bronze_medal"
-            app:layout_constraintRight_toRightOf="@id/bronze_medal"
-            app:layout_constraintTop_toBottomOf="@id/bronze_medal" />
-
-
-        <TextView
-            android:id="@+id/rank_of_the_team_by_total"
-            style="@style/RankOfTheTeam.Right"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="1" />
-
-
-        <TextView
-            android:id="@+id/rank_of_the_team_by_total_text"
-            style="@style/RankOfTheTeamText"
-            android:text="@string/total_rank_of_team"
-            android:background="#9AA0A6"
-            app:layout_constraintLeft_toLeftOf="@id/rank_of_the_team_by_total"
-            app:layout_constraintRight_toRightOf="@id/rank_of_the_team_by_total"
-            app:layout_constraintTop_toBottomOf="@id/rank_of_the_team_by_total" />
-
-        <TextView
-            android:id="@+id/total_point"
-            android:layout_width="45dp"
-            android:layout_height="20dp"
-            android:gravity="center"
-            android:textColor="@color/black"
-            app:layout_constraintLeft_toLeftOf="@id/team_name_text"
-            app:layout_constraintRight_toRightOf="@id/team_name_text"
-            app:layout_constraintTop_toBottomOf="@id/team_name_text"
-            tools:text="4" />
-
-        <TextView
-            android:id="@+id/total_point_text"
-            android:layout_width="77dp"
-            android:layout_height="20dp"
-            android:gravity="center"
-            android:text="@string/total_point"
-            android:textColor="@color/black"
-            android:background="#9AA0A6"
-            android:textSize="10sp"
-            app:layout_constraintLeft_toLeftOf="@id/total_point"
-            app:layout_constraintRight_toRightOf="@id/total_point"
-            app:layout_constraintTop_toBottomOf="@id/total_point" />
+            app:layout_constraintTop_toTopOf="@id/silver_medal" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
